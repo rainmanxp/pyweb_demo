@@ -46,3 +46,20 @@ services:
               - DELETE
               - HEAD
               - PATCH
+
+      custom_domain: 
+         domainName:  pyweb_demo-qfh5.1058300038444457.cn-hangzhou.fc.devsapp.net
+         protocol:    HTTP
+         routeConfig: 
+         routes: 
+           - 
+             functionName: pyweb_demo-qfh5
+             methods: 
+               - GET
+               - POST
+               - PUT
+               - DELETE
+               - OPTIONS
+             path:         /*
+             qualifier:    LATEST
+  
